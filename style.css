@@ -1,24 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --cor-primaria: #88cf59;
+    --cor-primaria: #B7E5B4;
+    --cor-secundaria: #FBFADA;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+#Sobre_mim, #Skills, #Hobbies, #Formações, #Experiências{
+    scroll-margin-top: 85px;
+}
+
 body{
     margin: 0;
     font-family: "Inter", sans-serif;
+    background-color: #f5f5f5;
 }
 
+.subtitulo{
+    padding: 20px 50px;
+    font-size: x-large;
+}
+
+/*///CABEÇALHO///*/
 header{
     background-color: var(--cor-primaria);
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 99%;
+    top: 0;
 }
 
 nav, .menu__direita{
@@ -37,4 +52,59 @@ a:hover{
     font-weight: bold;
     align-self: auto;
     margin: 0 -1.4px;
+}
+
+/*///APRESENTAÇÃO///*/
+.apresentacao{
+    margin-top: 60px;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    text-align: start;
+}
+
+.titulo{
+    font-size: 45px;
+}
+
+.foto_minha{
+    width: 250px;
+    border-radius: 100%;
+}
+
+/*///SOBRE MIM///*/
+#Sobre_mim{
+    background-color: var(--cor-secundaria);
+    padding: 5px 50px;
+    text-align: justify;
+    scroll-margin-top: 80px;
+}
+
+.sobre_mim__texto{
+    width: 70%;
+}
+
+/*///SKILLS E HOBBIES*/
+
+.listagem{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.caracteristica{
+    background-color: white;
+    width: 176px;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.icone{
+    color: rgb(0, 168, 0);
+    font-size: 70px;
 }
