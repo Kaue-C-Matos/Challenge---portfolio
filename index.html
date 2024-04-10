@@ -6,6 +6,8 @@
     <title>Portfólio Kauê C Matos</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/28522b82af.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <!--Menu principal-->
@@ -28,8 +30,8 @@
         <!--Apresentação-->
         <section class="apresentacao">
             <div class="apresentacao__esquerda">
-                <h1 class="titulo">Olá meu nome é Kauê e sou desenvolvedor Front End</h1>
-                <p>Eu tenho 19 anos e moro no interior do Paraná, atualmente estou finalizando minha formação em Tecnologia em Análise e Desenvolvimento de Sistema, além de participar do projeto Oracle ONE na Alura</p>
+                <h1 class="titulo">Olá meu nome é Kauê!</h1>
+                <p>Eu tenho 19 anos e moro no interior do Paraná, atualmente estou finalizando minha formação em Tecnologia em Análise e Desenvolvimento de Sistema, além de participar do projeto Oracle ONE na Alura me especializando na área de Front End</p>
                 <nav>
                     <a href="https://github.com/Kaue-C-Matos" class="redes"><i class="fa-brands fa-github"></i>  Github</a>
                     <a href="www.linkedin.com/in/kauê-da-costa-matos-770140275" class="redes"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
@@ -99,31 +101,69 @@
             </div>
 
         <!--Formações-->
-        <h2 id="Formações">Formações acadêmicas</h2>
-        <p>Minhas formações</p>
+        <section id="Formações">
+            <h1>Formações acadêmicas</h1>
+            <div class="formacoes_lista">
+                <div class="formacoes_lista__elemento">
+                    <img src="mídia/integrado-logo.png" alt="logo Integrado" class="img_formacao">
+                    <h2>Graduação TADS</h2>
+                    <p>Em andamento - Integrado</p>
+                </div>
+                <div class="formacoes_lista__elemento">
+                    <img src="mídia/Alura-logo.png" alt="logo Alura" class="img_formacao">
+                    <h2>Formação iniciante em programação</h2>
+                    <p>2024 - Alura</p>
+                </div>
+            </div>
+             
+        </section>
+        
 
         <!--Experiências profissional-->
-        <h2 id="Experiências">Experiências profissional</h2>
-        <p>minhas projetos bonitos</p>
+        <section id="Experiências">
+            <h1>Experiência profissional</h1>
+            <div class="experiencia_esquerda">
+                <img src="mídia/Challenge decodificador.png" alt="Print decodificador de texto" class="img_experiencia">
+                <h2 class="subtitulo_experiencia">Decodificador de texto</h2>
+                <p class="descricao_experiencia">Challenge da Alura para criar um decodificador de texto utilizando HTML, CSS e Javascript</p>
+                <button class="botao_repositorio" onclick="location.href='https://github.com/Kaue-C-Matos/challenge-ONE-decodificador'" type="button">Repositório</button>
+                <button class="botao_demo" onclick="location.href='https://kaue-c-matos.github.io/challenge-ONE-decodificador/'" type="button">Demo</button>
+            </div>
+            <div class="experiencia_direita">
+                <h2 class="subtitulo_experiencia">Listagem com React</h2>
+                <p class="descricao_experiencia">Um trabalho criado para a matéria de Front End, onde foi feita a listagem de uma API utilizando react</p>
+                <button class="botao_repositorio" onclick="location.href='https://github.com/Kaue-C-Matos/trabalho-front'" type="button">Repositório</button>
+                <button class="botao_demo" onclick="location.href='https://trabalho-front-lwqzfhg9n-kaue-c-matos-projects.vercel.app'" type="button">Demo</button>
+                <img src="mídia/Trabalho Front.png" alt="Print listagem react" class="img_experiencia">
+            </div>
+        </section>
+        
 
         <!--Formulário de contato-->
-        <h2>Entre em contato</h2>
-        <p>Quer entrar em contato comigo?
-            Preencha o formulário e entrarei em contato o mais rápido possível.</p>
-        <p>Nome</p>
-        <input type="text" class="contato" placeholder="Digite seu nome completo">
-        <P>E-mail</P>
-        <input type="text" class="contato" placeholder="Digite seu E-mail">
-        <p>Assunto</p>
-        <input type="text" class="contato" placeholder="Por qual assunto está entrando em contato">
-        <p>Mensagem</p>
-        <textarea placeholder="Digite sua mensagem"></textarea>
-        <button>Enviar</button>
+        <section class="contato">
+            <img src="mídia/telefone.jpg" alt="telefone" class="telefone">
+            <div class="formulario">
+                <h2>Entre em contato</h2>
+                <p>Quer entrar em contato comigo?
+                    Preencha o formulário e entrarei em contato o mais rápido possível.</p>
+                <p>Nome</p>
+                <input type="text" class="contato" placeholder="Digite seu nome completo">
+                <P>E-mail</P>
+                <input type="text" class="contato" placeholder="Digite seu E-mail">
+                <p>Assunto</p>
+                <input type="text" class="contato" placeholder="Por qual assunto está entrando em contato">
+                <p>Mensagem</p>
+                <textarea placeholder="Digite sua mensagem"></textarea>
+                <button>Enviar</button>
+
+            </div>
+        </section>
     </main>
 
     <!--Rodapé-->
     <footer>
-        <p>Site criado por Kauê da Costa Matos 2024</p>
+        <p class="rodape_texto">Site criado por Kauê da Costa Matos</p>
+        <p class="rodape_texto">2024</p>
     </footer>
 </body>
 </html>

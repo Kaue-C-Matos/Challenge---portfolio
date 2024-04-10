@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
-    --cor-primaria: #B7E5B4;
-    --cor-secundaria: #FBFADA;
+    --cor-primaria: #43c23a;
+    --cor-secundaria: #EFF396;
 }
 
 html {
@@ -11,6 +11,7 @@ html {
 
 #Sobre_mim, #Skills, #Hobbies, #Formações, #Experiências{
     scroll-margin-top: 85px;
+    margin-top: 5px;
 }
 
 body{
@@ -34,6 +35,7 @@ header{
     position: fixed;
     width: 99%;
     top: 0;
+    z-index: 1000;
 }
 
 nav, .menu__direita{
@@ -107,4 +109,135 @@ a:hover{
 .icone{
     color: rgb(0, 168, 0);
     font-size: 70px;
+}
+
+/*///FORMAÇÕES///*/
+#Formações{
+    background-color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formacoes_lista{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.img_formacao{
+    background-color: white;
+    height: 150px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/*///EXPERIÊNCIAS PROFISSIONAIS///*/
+#Experiências{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.experiencia_direita, .experiencia_esquerda{
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 50px 0;
+    visibility: hidden;
+}
+
+.experiencia_esquerda{
+    grid-template: 90px 80px 80px / 3fr 0.75fr 0.75fr;
+    grid-template-areas: 
+    "imagem subtitulo subtitulo"
+    "imagem descricao descricao"
+    "imagem repositorio demo";
+    
+}
+
+.experiencia_direita{
+    grid-template: 100px 100px 80px / 0.75fr 0.75fr 3fr;
+    grid-template-areas: 
+    "subtitulo subtitulo imagem"
+    "descricao descricao imagem"
+    "repositorio demo imagem";
+}
+
+.img_experiencia{
+    grid-area: imagem;
+    margin: 30px;
+    width: 90%;
+}
+
+.subtitulo_experiencia{
+    grid-area: subtitulo;
+    font-size: x-large;
+}
+
+.descricao_experiencia{
+    grid-area: descricao;
+}
+
+.botao_repositorio, .botao_demo{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao_repositorio{
+    grid-area: repositorio;
+    background-color: white;
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+}
+
+.botao_repositorio:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.botao_demo{
+    grid-area: demo;
+    background-color: var(--cor-primaria);
+    border-color: white;
+    color: white;
+}
+
+.botao_demo:hover{
+    background-color: white;
+    color: var(--cor-primaria);
+}
+
+/*///FORMULÁRIO///*/
+.contato{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+}
+
+.telefone{
+    width: 30%;
+    height: 80%;
+}
+
+/*///RODAPE///*/
+footer{
+    background-color: var(--cor-primaria);
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape_texto{
+    margin: 0;
+    font-weight: bolder;
 }
