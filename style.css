@@ -69,6 +69,15 @@ a:hover{
     font-size: 45px;
 }
 
+.tag{
+    color: rgb(22, 120, 212);
+    border: 2px solid rgb(22, 120, 212);
+    border-radius: 20px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
 .foto_minha{
     width: 250px;
     border-radius: 100%;
@@ -225,6 +234,46 @@ a:hover{
 .telefone{
     width: 30%;
     height: 80%;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.formulario_descricao{
+    margin-bottom: -1px;
+}
+
+.formulario_input, textarea{
+    border-radius: 8px;
+    width: 500px;
+    height: 30px;
+    border: 2px solid black;
+}
+
+textarea{
+    height: 90px;
+}
+
+.enviar{
+    width: 200px;
+    height: 40px;
+    margin: 20px 0;
+    background-color: #2A7AE4;
+    color: white;
+    border: 2px solid #2A7AE4;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.enviar:hover{
+    color: #2A7AE4;
+    background-color: white;
 }
 
 /*///RODAPE///*/
