@@ -168,7 +168,7 @@ a:hover{
 }
 
 .experiencia_direita{
-    grid-template: 100px 100px 80px / 0.75fr 0.75fr 3fr;
+    grid-template: 90px 90px 80px / 0.75fr 0.75fr 3fr;
     grid-template-areas: 
     "subtitulo subtitulo imagem"
     "descricao descricao imagem"
@@ -255,6 +255,13 @@ a:hover{
     border: 2px solid black;
 }
 
+.aviso{
+    color: red;
+    font-size: small;
+    visibility: hidden;
+    margin: -2px 0 -10px 0;
+}
+
 textarea{
     height: 90px;
 }
@@ -289,4 +296,86 @@ footer{
 .rodape_texto{
     margin: 0;
     font-weight: bolder;
+}
+
+@media (max-width: 500px){
+
+    /*///CABECALHO///*/
+    header{
+        width: 100%;
+    }
+
+    .lista_navegacao{
+        display: none;
+    }
+
+    .email{
+        font-size: smaller;
+    }
+
+    /*///SOBRE MIM///*/
+    .sobre_mim__texto{
+        width: 90%;
+    }
+
+    /*///APRESENTACAO///*/
+    .apresentacao{
+        flex-direction: column-reverse;
+        align-items: self-start;
+        padding: 50px 20px;
+        text-align: justify;
+    }
+
+    .foto_minha{
+        width: 175px;
+    }
+
+    /*HOBBIES E SKILLS///*/
+    .listagem{
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 30px;
+        margin: 12px;
+    }
+
+    .caracteristica{
+        height: 140px;
+    }
+
+    .icone{
+        font-size: 60px;
+    }
+
+    /*///FORMAÇÕES///*/
+    .formacoes_lista{
+        flex-direction: column;
+        gap: 75px;
+    }
+    
+    .formacoes_lista__elemento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*///EXPERIÊNCIAS///*/
+    .experiencia_esquerda, .experiencia_direita{
+        margin:0;
+        grid-template: 200px 60px 60px 70px / 1fr 1fr;
+        grid-template-areas: 
+        "imagem imagem"
+        "subtitulo subtitulo"
+        "descricao descricao"
+        "repositorio demo";
+    }
+
+    /*///FORMULÁRIO///*/
+    .telefone{
+        display: none;
+    }
+
+    .formulario_input, textarea{
+        width: 250px;
+    }
 }
