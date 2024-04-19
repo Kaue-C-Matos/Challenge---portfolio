@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/28522b82af.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="app.js" defer></script>
 </head>
 <body>
     <!--Menu principal-->
     <header>
         <h3><i class="fa-solid fa-code"></i><b>     Kauê da Costa Matos</b></h3>
         <div class="menu__direita">
-            <nav>
+            <nav class="lista_navegacao">
                 <a href="#Sobre_mim" class="navegacao">Sobre Mim</a>
                 <a href="#Skills">Skills</a>
                 <a href="#Hobbies">Hobbies</a>
@@ -33,7 +32,7 @@
                 <h1 class="titulo">Olá meu nome é Kauê!</h1>
                 <h1 class="tag">Front End</h1>
                 <p>Eu tenho 19 anos e moro no interior do Paraná, atualmente estou finalizando minha formação em Tecnologia em Análise e Desenvolvimento de Sistema, além de participar do projeto Oracle ONE na Alura me especializando na área de Front End</p>
-                <nav>
+                <nav class="lista_redes">
                     <a href="https://github.com/Kaue-C-Matos" class="redes"><i class="fa-brands fa-github"></i>  Github</a>
                     <a href="www.linkedin.com/in/kauê-da-costa-matos-770140275" class="redes"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
                     <a href="https://www.instagram.com/kauedacostamatos/" class="redes"><i class="fa-brands fa-square-instagram"></i>  Instagram</a>
@@ -152,11 +151,14 @@
                 <p>Quer entrar em contato comigo?
                     Preencha o formulário e entrarei em contato o mais rápido possível.</p>
                 <h3 class="formulario_descricao">Nome</h3>
-                <input type="text" class="formulario_input" placeholder="Digite seu nome completo">
+                <input type="text" class="formulario_input nome" placeholder="Digite seu nome completo">
+                <p class="aviso"> O Nome deve ter entre 3 e 50 caracteres</p>
                 <h3 class="formulario_descricao">E-mail</h3>
                 <input type="text" class="formulario_input" placeholder="Digite seu E-mail">
+                <p class="aviso"> O Nome deve ter no mínimo 5 caracteres</p>
                 <h3 class="formulario_descricao">Assunto</h3>
                 <input type="text" class="formulario_input" placeholder="Por qual assunto está entrando em contato">
+                <p class="aviso"> O Nome deve ter no mínimo 5 caracteres</p>
                 <h3 class="formulario_descricao">Mensagem</h3>
                 <textarea placeholder="Digite sua mensagem"></textarea>
                 <button class="enviar">Enviar Mensagem</button>
@@ -170,5 +172,7 @@
         <p class="rodape_texto">Site criado por Kauê da Costa Matos</p>
         <p class="rodape_texto">2024</p>
     </footer>
+
+    <script src="app.js" defer></script>
 </body>
 </html>

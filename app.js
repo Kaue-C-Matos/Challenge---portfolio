@@ -20,3 +20,18 @@ revelar.reveal('.experiencia_direita', {
         ScrollReveal().clean(el);
     }
 })
+
+function checarNome() {
+    let nome = document.querySelector(".nome").value.length
+    let inputNome = document.querySelector(".nome")
+    if (nome < 3 || nome > 50) {
+        inputNome.style.borderColor = "red";
+        document.querySelector(".aviso").style.visibility = "visible"
+    } else if (nome >=5){
+        inputNome.style.borderColor = "black";
+        document.querySelector(".aviso").style.visibility = "hidden"
+    }
+    
+}
+
+document.querySelector(".nome").onchange = checarNome;
