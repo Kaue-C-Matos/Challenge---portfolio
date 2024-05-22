@@ -34,7 +34,7 @@
                 <p>Eu tenho 19 anos e moro no interior do Paraná, atualmente estou finalizando minha formação em Tecnologia em Análise e Desenvolvimento de Sistema, além de participar do projeto Oracle ONE na Alura me especializando na área de Front End</p>
                 <nav class="lista_redes">
                     <a href="https://github.com/Kaue-C-Matos" class="redes"><i class="fa-brands fa-github"></i>  Github</a>
-                    <a href="https://www.linkedin.com/in/kaue-da-costa-matos-770140275" class="redes"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
+                    <a href="https://   www.linkedin.com/in/kaue-da-costa-matos-770140275" class="redes"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
                     <a href="https://www.instagram.com/kauedacostamatos/" class="redes"><i class="fa-brands fa-square-instagram"></i>  Instagram</a>
                     <a href="mídia/Kaue da Costa Matos - curriculo.pdf" class="redes"><i class="fa-solid fa-file"></i>  Currículo</a>
                 </nav>
@@ -150,18 +150,21 @@
                 <h2>Entre em contato</h2>
                 <p>Quer entrar em contato comigo?
                     Preencha o formulário e entrarei em contato o mais rápido possível.</p>
-                <h3 class="formulario_descricao">Nome</h3>
-                <input type="text" class="formulario_input nome" placeholder="Digite seu nome completo">
-                <p class="aviso"> O Nome deve ter entre 3 e 50 caracteres</p>
-                <h3 class="formulario_descricao">E-mail</h3>
-                <input type="text" class="formulario_input" placeholder="Digite seu E-mail">
-                <p class="aviso"> O Nome deve ter no mínimo 5 caracteres</p>
-                <h3 class="formulario_descricao">Assunto</h3>
-                <input type="text" class="formulario_input" placeholder="Por qual assunto está entrando em contato">
-                <p class="aviso"> O Nome deve ter no mínimo 5 caracteres</p>
-                <h3 class="formulario_descricao">Mensagem</h3>
-                <textarea placeholder="Digite sua mensagem"></textarea>
-                <button class="enviar">Enviar Mensagem</button>
+                <form>
+                    <h3 class="formulario_descricao">Nome</h3>
+                    <input type="text" class="formulario_input nome" placeholder="Digite seu nome completo" required minlength="3" maxlength="50">
+
+                    <h3 class="formulario_descricao">E-mail</h3>
+                    <input type="email" class="formulario_input" placeholder="Digite seu E-mail" required>
+
+                    <h3 class="formulario_descricao">Assunto</h3>
+                    <input type="text" class="formulario_input" placeholder="Por qual assunto está entrando em contato" required maxlength="50">
+
+                    <h3 class="formulario_descricao">Mensagem</h3>
+                    <textarea placeholder="Digite sua mensagem" required maxlength="300"></textarea>
+
+                    <input type="submit" class="enviar"></input>
+                </form>
 
             </div>
         </section>
